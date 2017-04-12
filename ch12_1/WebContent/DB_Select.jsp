@@ -11,8 +11,8 @@ ResultSet resultSet;
 
 String driver = "oracle.jdbc.driver.OracleDriver"; 
 String url="jdbc:oracle:thin:@localhost:1521:orcl";
-String uid = "kbs123";     
-String upw = "pass123";
+String uid = "smj459";     
+String upw = "min6422";
 String query = "select * from student";
 %>
 
