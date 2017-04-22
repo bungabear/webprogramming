@@ -7,9 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-    <h3>include 되는 pageContextTest3.jsp 페이지입니다.</h3>
-<hr>
-
+<%!
+int age;
+%>
+<%
+String str=request.getParameter("age");
+age=Integer.parseInt(str);
+if(age>=20)
+{   response.sendRedirect("pass.jsp?age="+age);  
+ }
+else{  response.sendRedirect("ng.jsp?age="+age);
+}
+%>
 </body>
 </html>

@@ -4,12 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<title>LOGIN</title>
 </head>
 <body>
-
-    <h3>include 되는 pageContextTest3.jsp 페이지입니다.</h3>
-<hr>
-
+<form action= " aaa_ok.jsp" method="post">  
+아이디: <input type="text" name="id"> <br><br>
+암 호: <input type="password" name="pw"> <br><br>
+<input type="submit" value="전송">
+</form>
 </body>
 </html>

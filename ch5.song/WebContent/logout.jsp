@@ -4,12 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<title>우리 집으로 가자</title>
 </head>
 <body>
-
-    <h3>include 되는 pageContextTest3.jsp 페이지입니다.</h3>
-<hr>
-
+<% session.invalidate(); %>
+   <script>
+       alert("로그아웃 되었습니다.");
+       location.href="aaa.jsp";
+     </script>
 </body>
 </html>

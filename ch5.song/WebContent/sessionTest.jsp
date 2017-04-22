@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%
-      session.setMaxInactiveInterval(5);   // 초 
+      session.setMaxInactiveInterval(20);   // 초 
 %>
 <html><head>
 <title>Session Test</title>
@@ -12,6 +12,3 @@
 최종 접속 시간: <%=session.getLastAccessedTime()%><br>
 세션ID : <%=session.getId()%> <br>
 </body></html>
-
-
-

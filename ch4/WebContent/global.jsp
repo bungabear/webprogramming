@@ -7,9 +7,24 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-    <h3>include 되는 pageContextTest3.jsp 페이지입니다.</h3>
-<hr>
-
+<%!
+   int i=10;
+   String str="JSP";
+%>
+<%!
+     public int sum(int a, int b) {
+     return a+b;
+    }
+%>
+<%
+   out.println("i=" + i + "<br>");
+   out.println("str=" + str + "<br>");
+   out.println("sum=" + sum(2,3) + "<br>");
+ %>
 </body>
+
+
+
+
+
 </html>

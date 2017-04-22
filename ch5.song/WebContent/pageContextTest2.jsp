@@ -7,9 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-    <h3>include 되는 pageContextTest3.jsp 페이지입니다.</h3>
-<hr>
-
+<%
+     pageContext.include("pageContextTest3.jsp");
+%><!--   pageContextTest3.jsp 를 포함시킨다.  -->
+<h3>pageContext의 forward 메소드로 포워딩된 페이지입니다.</h3>
 </body>
 </html>

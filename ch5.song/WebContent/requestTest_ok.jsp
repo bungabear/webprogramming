@@ -12,8 +12,6 @@ name = request.getParameter("name");
 gender = request.getParameter("gender");
 hobbys = request.getParameterValues("hobby");
 %>
-
-
 <h3>Request 예제입니다.</h3>
 <table border="1" width="400">
 <tr><td>이름</td>
@@ -24,5 +22,3 @@ hobbys = request.getParameterValues("hobby");
      <td> <%= Arrays.toString(hobbys) %>
 </td></tr>
 </table></body>
-
-

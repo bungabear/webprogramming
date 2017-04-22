@@ -7,9 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-    <h3>include 되는 pageContextTest3.jsp 페이지입니다.</h3>
-<hr>
-
+<%
+    pageContext.forward("pageContextTest2.jsp");
+%> <!-- 제어권을  pageContextTest2.jsp 로 넘긴다.  -->
 </body>
 </html>

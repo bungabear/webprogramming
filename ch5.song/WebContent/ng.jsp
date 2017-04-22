@@ -7,9 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-    <h3>include 되는 pageContextTest3.jsp 페이지입니다.</h3>
-<hr>
-
+<%!
+int age;
+%>
+<%
+  String str=request.getParameter("age");
+  age=Integer.parseInt(str);
+%><%=age %>세 미성년자 입니다. 주류구매가 불가능 합니다.
 </body>
 </html>

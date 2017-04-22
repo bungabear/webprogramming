@@ -10,5 +10,6 @@
 <%
     pageContext.forward("pageContextTest2.jsp");
 %> <!-- 제어권을  pageContextTest2.jsp 로 넘긴다.  -->
+
 </body>
 </html>

@@ -7,9 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-    <h3>include 되는 pageContextTest3.jsp 페이지입니다.</h3>
-<hr>
-
+<%!
+int age;
+%>
+<%
+String str=request.getParameter("age");
+age=Integer.parseInt(str);
+%>님 담배 뚫림 ㅋ
 </body>
 </html>
