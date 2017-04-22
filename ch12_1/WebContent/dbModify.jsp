@@ -6,14 +6,14 @@
 <%
 	int in_num = Integer.parseInt(request.getParameter("num"));
 	String driver = "oracle.jdbc.driver.OracleDriver"; //드라이버 이름 설정
-	String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+	String url = "jdbc:oracle:thin:@orcl.cunrsihyxqm6.us-west-2.rds.amazonaws.com:1521:orcl";
 	Connection conn = null;
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
 
 	try {
 		Class.forName(driver); //드라이버 이름으로 드라이버를 로드
-		conn = DriverManager.getConnection(url, "smj6422", "min6422");
+		conn = DriverManager.getConnection(url, "smj459", "min6422");
 		pstmt = conn.prepareStatement("SELECT * FROM student WHERE num=?");
 		pstmt.setInt(1, in_num);
 		rs = pstmt.executeQuery();

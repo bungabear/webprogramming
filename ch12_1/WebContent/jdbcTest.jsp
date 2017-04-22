@@ -3,7 +3,7 @@
  <%
  Connection conn=null;  // 커넥션 객체 생성
  String driver="oracle.jdbc.driver.OracleDriver";  //드라이버 이름 설정
- String url="jdbc:oracle:thin:@localhost:1521:orcl"; 
+ String url="jdbc:oracle:thin:@orcl.cunrsihyxqm6.us-west-2.rds.amazonaws.com:1521:orcl"; 
      //드라이버 사용하여 접속할 URL , 즉  DB 가 있는 위치
 
  Boolean connect=false;   // 결과 저장할 변수 

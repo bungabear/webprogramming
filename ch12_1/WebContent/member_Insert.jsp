@@ -9,8 +9,8 @@
  String sql="INSERT INTO member (id,pass,name,age,gender,email,status) VALUES ('TEST','1111','테스트',21,'여자','Test@naver.com',0)";
  
  String driver="oracle.jdbc.driver.OracleDriver";  //드라이버 이름 설정
- String url="jdbc:oracle:thin:@localhost:1521:orcl";
-
+	String url = "jdbc:oracle:thin:@orcl.cunrsihyxqm6.us-west-2.rds.amazonaws.com:1521:orcl";
+ 
 try { 
   Class.forName(driver);  //드라이버 이름으로 드라이버를 로드
   conn=DriverManager.getConnection(url,"smj459","min6422");

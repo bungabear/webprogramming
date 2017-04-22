@@ -10,7 +10,7 @@ Statement statement;
 ResultSet resultSet;
 
 String driver = "oracle.jdbc.driver.OracleDriver"; 
-String url="jdbc:oracle:thin:@localhost:1521:orcl";
+String url="jdbc:oracle:thin:@orcl.cunrsihyxqm6.us-west-2.rds.amazonaws.com:1521:orcl";
 String uid = "smj459";     
 String upw = "min6422";
 String query = "select * from student";

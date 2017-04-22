@@ -14,7 +14,7 @@
 	
 	String bad_id = request.getParameter("id");
 	String driver = "oracle.jdbc.driver.OracleDriver"; //드라이버 이름 설정
-	String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+	String url = "jdbc:oracle:thin:@orcl.cunrsihyxqm6.us-west-2.rds.amazonaws.com:1521:orcl";
 	Connection conn = null;
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;

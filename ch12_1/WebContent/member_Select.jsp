@@ -7,7 +7,7 @@
 int i=0;  
 String sql="SELECT * FROM member";
 String driver="oracle.jdbc.driver.OracleDriver"; 
-String url="jdbc:oracle:thin:@localhost:1521:orcl";
+String url = "jdbc:oracle:thin:@orcl.cunrsihyxqm6.us-west-2.rds.amazonaws.com:1521:orcl";
 try {
 Class.forName(driver); 
 Connection con = 
