@@ -11,7 +11,7 @@
 		
 	}
 	function admin_Check() {
-		location
+		location.
 	}
 </script>
 
