@@ -7,11 +7,9 @@
 <title>Insert title here</title>
 </head>
 <script>
-	function studentNumber_Check() {
-		
-	}
 	function admin_Check() {
-		location.
+		document.loginForm.action = "examAdd.jsp"
+		document.loginForm.submit();
 	}
 </script>
 
@@ -20,17 +18,16 @@
 		<table>
 			<form name="loginForm" action="exam.jsp" method="post">
 				<tr>
-					<td>아아디</td>
-					<td><input type="text" name="id"></td>
+					<td>학번</td>
+					<td><input type="text" name="studentNum"></td>
 				</tr>
 
 				<tr>
-					<td>비밀번호</td>
-					<td><input type="password" name="pass"></td>
+					<td>이름</td>
+					<td><input type="password" name="name"></td>
 				</tr>
 				<tr>
-					<td><input type="button" value="시험보기"
-						onClick="javascript:studentNumber_Check()"></td>
+					<td><input type="submit" value="시험보기"></td>
 					<td><input type="button" value="문제 출제하기"
 						onClick="javascript:admin_Check()"></td>
 				</tr>
