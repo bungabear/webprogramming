@@ -56,3 +56,4 @@ insert  into quiz(Q_NUM, Q_TYPE, Q_QUESTION, Q_IMAGE, Q_EX1, Q_EX2, Q_EX3, Q_EX4
 insert  into quiz(Q_NUM, Q_TYPE, Q_QUESTION, Q_IMAGE, Q_EX1, Q_EX2, Q_EX3, Q_EX4, Q_ANSWER) Values(16, 'TT', '7-4= 무엇인가  ?', null, '1', '2', '3', '4', '3');
 update QUIZ set Q_IMAGE = '173.gif' where Q_NUM = 1;
 select * from (select * from quiz order by DBMS_RANDOM.RANDOM) where rownum <= 10 order by Q_NUM;
+select count(*) as count from quiz;

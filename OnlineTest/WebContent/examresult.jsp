@@ -23,7 +23,9 @@
 				ResultSet rs = null;
 
 				String driver = "oracle.jdbc.driver.OracleDriver"; //드라이버 이름 설정
-				String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+				String address = "localhost";
+				String address1 = "orcl.cunrsihyxqm6.us-west-2.rds.amazonaws.com";
+				String url = "jdbc:oracle:thin:@" + address1 + ":1521:orcl";
 
 				try {
 					Class.forName(driver); //드라이버 이름으로 드라이버를 로드

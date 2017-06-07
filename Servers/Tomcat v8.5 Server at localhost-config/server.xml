@@ -136,7 +136,7 @@
         <Realm className="org.apache.catalina.realm.UserDatabaseRealm" resourceName="UserDatabase"/>
       </Realm>
 
-      <Host appBase="D:\website\ROOT\JSP_HOME\WebContent" autoDeploy="true" name="localhost" unpackWARs="true">
+      <Host appBase="webapps" autoDeploy="true" name="localhost" unpackWARs="true">
 
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->
@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="ch12_3Validation" path="/ch12_3Validation" reloadable="true" source="org.eclipse.jst.jee.server:ch12_3Validation"/><Context docBase="OnlineTest" path="/OnlineTest" reloadable="true" source="org.eclipse.jst.jee.server:OnlineTest"/></Host>
+      <Context docBase="ch13_EL" path="/ch13_EL" reloadable="true" source="org.eclipse.jst.jee.server:ch13_EL"/><Context docBase="ch13_DAO_DTO" path="/ch13_DAO_DTO" reloadable="true" source="org.eclipse.jst.jee.server:ch13_DAO_DTO"/><Context docBase="ch13" path="/ch13" reloadable="true" source="org.eclipse.jst.jee.server:ch13"/><Context docBase="ch14_connection_pool" path="/ch14_connection_pool" reloadable="true" source="org.eclipse.jst.jee.server:ch14_connection_pool"/><Context docBase="ch12_3Validation" path="/ch12_3Validation" reloadable="true" source="org.eclipse.jst.jee.server:ch12_3Validation"/><Context docBase="Forwarding_Pattern" path="/Forwarding_Pattern" reloadable="true" source="org.eclipse.jst.jee.server:Forwarding_Pattern"/><Context docBase="OnlineTest" path="/OnlineTest" reloadable="true" source="org.eclipse.jst.jee.server:OnlineTest"/></Host>
     </Engine>
   </Service>
 </Server>

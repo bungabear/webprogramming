@@ -21,8 +21,8 @@
 	%>
 	<%
 	request.setCharacterEncoding("euc-kr");
-	String studentNum = request.getParameter("studentNum");
-	String name = request.getParameter("name");
+	String studentNum = (String)session.getAttribute("studentNum");
+	String name = (String)session.getAttribute("name");
 	if (studentNum.equals("") || name.equals("")) {
 			response.sendRedirect("exam.jsp");
 		} else {
@@ -35,13 +35,15 @@
 			ResultSet rs = null;
 
 			String driver = "oracle.jdbc.driver.OracleDriver"; //드라이버 이름 설정
-			String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+			String address = "localhost";
+			String address1 = "orcl.cunrsihyxqm6.us-west-2.rds.amazonaws.com";
+			String url = "jdbc:oracle:thin:@" + address1 + ":1521:orcl";
 
 			try {
 				Class.forName(driver); //드라이버 이름으로 드라이버를 로드
 				conn = DriverManager.getConnection(url, "smj459", "min6422");
+				
 				pstmt = conn.prepareStatement("select Q_ANSWER from quiz where Q_NUM = ?");
-
 				for (int i = 1; i <= questionNum; i++) {
 					int qNum = Integer.valueOf(request.getParameter("question" + i));
 					pstmt.setInt(1, qNum);

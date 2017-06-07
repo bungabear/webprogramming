@@ -25,4 +25,15 @@
     <!--
     <Manager pathname="" />
     -->
+     <Resource 
+    auth="Container" 
+    driverClassName="oracle.jdbc.driver.OracleDriver" 
+    url="jdbc:oracle:thin:@orcl.cunrsihyxqm6.us-west-2.rds.amazonaws.com:1521:orcl" 
+    username="smj459" 
+    password="min6422" 
+    name="jdbc/Oracle11g" 
+    type="javax.sql.DataSource" 
+    maxActive="50" 
+    maxWait="1000"
+     />
 </Context>

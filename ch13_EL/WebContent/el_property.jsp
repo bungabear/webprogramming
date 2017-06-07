@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+이름 : ${member.name} <br>
+아이디 :  ${member["id"]} <br>
+패스 : ${member.pass} <br>
 
 </body>
 </html>
