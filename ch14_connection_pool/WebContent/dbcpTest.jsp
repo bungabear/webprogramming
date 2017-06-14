@@ -14,5 +14,3 @@ out.println("<h3>연결에 실패하였습니다.</h3>");
 e.printStackTrace();
  }
 %>
-
-
